@@ -12,8 +12,10 @@
 
     <script src="./assets/js/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </head>
+<script src="./assets/js/main.js"></script>
 <body>
     <haeder class="header">
        <div class="inner">
@@ -25,7 +27,7 @@
             <div class="group-bottom">
                 <h1>
                     <a href="" class="logo">
-                       <img src="https://recopick.com/img/logo/logo.svg" alt="레코픽">
+                       <img src="./assets/img/lecopic.logo.svg" alt="레코픽">
                     </a>
                 </h1>
                 <div class="group-menu">
@@ -50,11 +52,11 @@
                 </div>
                 <div class="group-image">
                     <div class="img-box">
-                        <img src="https://recopick.com/img/main/visual/2.png" alt>
-                        <img src="https://recopick.com/img/main/visual/3.png" alt>
-                        <img src="https://recopick.com/img/main/visual/1.png" alt>
-                        <img src="https://recopick.com/img/main/visual/2.png" alt>
-                        <img src="https://recopick.com/img/main/visual/3.png" alt>
+                        <img src="./assets/img/visual-main2.png" alt>
+                        <img src="./assets/img/visual-main3.png" alt>
+                        <img src="./assets/img/visual-main1.png" alt>
+                        <img src="./assets/img/visual-main2.png" alt>
+                        <img src="./assets/img/visual-main3.png" alt>
                     </div>
                 </div>
             </div>
@@ -83,36 +85,64 @@
                     </div>
                     <button>전체 소개자료 보기</button>
                 </div>
-                <!-- <div class="text-box">
-                    <div class="box">
-                        
-                    </div>
-                </div> -->
-                
-
-                <!-- <div class="group-search">
-                    <form action="" method="get">
-                        <legend class="blind">검색</legend>
-                        <div class="search-bd">
-                            <input type="text">
-                            <button>
-                                <span class="blind">검색</span>
-                                <img src="https://recopick.com/img/icon/i-search__br.svg" alt>
-                            </button>
-                        </div>
-                    </form>
-                </div> -->
                 <div class="group-motion">
                     <div class="line-bd">
-                        <span></span>
-                        <img src="https://recopick.com/img/icon/i-search__br.svg" alt>
+                        <span>
+                            <i>인</i>
+                            <i>테</i>
+                            <i>리</i>
+                            <i>어</i>
+                            <i></i>
+                            <i>용</i>
+                            <i>품</i>
+                        </span>
+                        <img class="search" src="https://recopick.com/img/icon/i-search__br.svg" alt>
                     </div>
+                </div>
+
+                <div class="tag-wrap">
+                    <div class="tak">
+                        <div class="tag">관심있어하던 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <div class="tag">관심있어하던 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <div class="tag">관심있어하던 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <div class="tag">관심있어하던 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <div class="tag abs">
+                                    나와 비슷한 사람들은 이 상품을 많이 구매했어요<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+                    <div class="tak">
+                        <img class="prd" src="./assets/img/intro.jpg" alt>
+                    </div>
+
+                </div>
+                <!-- <div class="prd">
+                    <div class="tag">관심있어하던 상품</div>
+                    <img src="https://recopick.com/img/main/intro/motion-img1.png" alt>
                 </div>
                 <div class="tag-wrap">
                     <div class="tag">관심있어하던 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
                     <div class="tag">카테고리 내에서 인기있는 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
                     <div class="tag">비슷한 디자인의 상품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
                     <div class="tag">이 상품과 같이 구매한 아이템<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
+                    <div class="tag">나와 비슷한 사람들은 이 상품을 많이 구매했어요<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></div>
                 </div>
                 <div class="img-wrap">
                     <img src="https://recopick.com/img/main/intro/motion-img1.png" alt>
@@ -123,7 +153,7 @@
                     <img src="https://recopick.com/img/main/intro/motion-img1.png" alt>
                     <img src="https://recopick.com/img/main/intro/motion-img1.png" alt>
                     <img src="https://recopick.com/img/main/intro/motion-img1.png" alt>
-                </div>
+                </div> -->
             </section>
             <section class="sc-banner1">
                 
@@ -136,75 +166,79 @@
                         상품을 추천하여 고객이 상품을 지속적으로 탐색할 수 있도록 유도합니다.</p>
                 </div>
                 <div class="img-box">
-                    <img class="visible1"  src="https://recopick.com/img/main/intro/con-tr.svg" alt>
+                    <img class="visible1"  src="./assets/img/line1.svg" alt>
                 </div>
                 <div class="img-wrap">
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
+                    <div class="line line1">
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts1.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
                         </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts2.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">파우더팩트<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">화장품<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
-                        </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                        </div>
-                    </div>
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
-                        </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                        </div>
-                    </div>
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
-                        </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts3.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">베이직한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">린넨 자켓<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
+                    <div class="line line2">
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts4.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">혼자만들기 간편한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">밀키트<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
                         </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts5.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">깔끔하고 성능 좋은<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">노트북<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
+                        </div>
+                        <div class="info-wrap">
+                            <div class="img-box">
+                                <img src="./assets/img/conts6.png" alt>
+                            </div>
+                            <div class="tag-box">
+                                <span class="tag">향초<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                                <span class="tag">캔들<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="info-wrap">
-                        <div class="img-box">
-                            <img src="https://recopick.com/img/main/info-conts1.png" alt>
-                        </div>
-                        <div class="tag-box">
-                            <span class="tag">편안한<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                            <span class="tag">의자<button><img src="https://recopick.com/img/icon/i-remove-gr.svg" alt></button></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-box">
-                    <img class="visible2"  src="https://recopick.com/img/main/intro/con-bl.svg" alt>
                 </div>
                 <div class="info-box2">
                     <strong>기술 도입에 필요한 <span class="mark">
                         투자 부담은 덜고,<br>
-                            성능과 안전성을 보장하는
+                        성능과 안전성을 보장하는
                     </span></strong>
                     <p class="desc">서비스 이용료의 부담을 덜어낼 수 있도록 사용된 만큼만,<br>
                         레코픽 서비스를 통해 발생한 매출을 기반으로 책정하는 이용 요금 시스템.</p>
-                </div>
+                    </div>
+                    <div class="img-box">
+                        <img class="visible2"  src="./assets/img/line2.svg" alt>
+                    </div>
             </section>
         
             <section class="sc-slide1">
@@ -213,10 +247,10 @@
                     <div class="content-wrap">
                         <div class="group-left">
                             <div class="flex-area">
-                                <button id="#tab1">레코픽 추천</button>
-                                <button id="#tab2" >레코픽 랜딩</button>
+                                <button data-tab="#tab1" class="active">레코픽 추천</button>
+                                <button data-tab="#tab2" >레코픽 랜딩</button>
                             </div>
-                            <div class="text-box">
+                            <div class="text-box on" id="tab1">
                                 <strong>레코픽 개인화 추천</strong>
                                 <p class="desc">개인화 추천은 고객 개개인이 사이트 내에서 평소 무엇을 보고,
                                     구매했는지, 최근 관심사는 무엇인지, 어떤 키워드로 검색을 하는지
@@ -227,7 +261,7 @@
                                     </em>시키는 가장 효과적인 마케팅 방법입니다.
                                 </p>
                             </div>
-                            <div class="text-box" style="display: none;">
+                            <div class="text-box" id="tab2">
                                 <strong>레코픽 랜딩</strong>
                                 <p class="desc">기존 랜딩 페이지는 모든 고객에게 동일하게 제공되기 때문에 고객의 개별 Needs를 맞추기엔 한계가 있어 페이지 이탈율이 매우 높습니다. 레코픽은 개개인별 고객 관심사에 따라 자동으로 추천되는 개인 맞춤 랜딩페이지로 이탈율을 줄이고 마케팅 성과를 극대화 합니다. 기존 광고에서 기대할 수 없었던 강력한 일대일 마케팅의 기회를 잡으세요.
                                 </p>
@@ -237,7 +271,7 @@
                         <div class="group-right">
                             <div class="swiper visual-slide1" >
                                 <ul class="swiper-wrapper">
-                                    <li class="swiper-slide">
+                                    <li class="swiper-slide slide1-motion">
                                         <div class="motion1" style="display: none;"><!-- 첫번째 슬라이드에 첫번째이미지 -->
                         
                                         </div>
@@ -248,12 +282,12 @@
                                             <div class="motion2-body">
                                                 <div class="motion2-scroll">
                                                     <div class="img-box">
-                                                        <img src="https://recopick.com/img/main/service/service-group2-1.png" alt>
+                                                        <img class="target1" src="./assets/img/slide1-1.png" alt>
                                                     </div>
                                                     <div class="scrollx-area">
                                                         <span>이 상품과 함께 본 상품</span>
                                                             <div class="img-box2">
-                                                                <img class="target"  src="https://recopick.com/img/main/service/service-group2-2.png" alt=>
+                                                                <img class="target2"  src="./assets/img/slide1-2.png" alt=>
                                                             </div>
                                                     </div>
                                                 </div>
@@ -261,40 +295,49 @@
                                         </div>
                                     </li>
                                     <!-- 두번째 슬라이드에 첫번째이미지 -->
-                                    <li class="swiper-slide">
-                                        <img class="motion2-1" src="https://recopick.com/img/main/service/service-group3-1.png" alt>
-                                        <img class="motion2-2" src="https://recopick.com/img/main/service/service-group3-2.png" alt>
-                                        <img class="motion2-3" src="https://recopick.com/img/main/service/service-group3-3.png" alt>
-                                        <img class="motion2-4" src="https://recopick.com/img/main/service/service-group3-4.png" alt>
-                                        <img class="motion2-5" src="https://recopick.com/img/main/service/service-group3-5.png" alt>
-                                        <img class="motion2-6" src="https://recopick.com/img/main/service/service-group3-6.png" alt>
+                                    <li class="swiper-slide slide2-motion">
+                                        <img class="motion2-1" src="./assets/img/slide2-1.png" alt>
+                                        <img class="motion2-2" src="./assets/img/slide2-2.png" alt>
+                                        <img class="motion2-3" src="./assets/img/slide2-3.png" alt>
+                                        <img class="motion2-4" src="./assets/img/slide2-4.png" alt>
+                                        <img class="motion2-5" src="./assets/img/slide2-5.png" alt>
+                                        <img class="motion2-6" src="./assets/img/slide2-6.png" alt>
                                         <div class="tag-wrap">
                                             <div class="before">BEFORE</div>
                                             <div class="after">AFTER</div>
                                         </div>
                                         <div class="span-wrap">
                                             <span class="span-before">
-                                                <strong>개별Needs에</strong><br>
-                                                <strong>적합하지 않은</strong><br>
-                                                기존랜딩페이지
+                                                <strong>
+                                                    <em>개별Needs에</em><br>
+                                                    적합하지 않은<br>
+                                                    기존랜딩페이지
+                                                </strong>
                                             </span>
-                                            <span class="span-after" style="display: none;">
-                                                <strong>개별Needs에<br>
-                                                적합한</strong>자동 맞춤<br>
-                                                추천 랜딩 페이지
+                                            <span class="span-after">
+                                                <strong>
+                                                    <em>개별Needs에<br>
+                                                    적합</em>한자동 맞춤<br>
+                                                    추천 랜딩 페이지
+                                                </strong>
                                             </span>
                                         </div>
-                                        <div class="keyword-wrap">추천키워드
-                                        <div class="key">롱원피스</div>
+                                        <div class="keyword-wrap">
+                                            <span>추천키워드</span>
+                                            <div class="key">원피스</div>
                                             <div class="key">플라워원피스</div>
                                             <div class="key">실크소재원피스</div>
                                         </div>
                                     </li>
                                 </ul>
-                                <button class="btn prev">
-                                </button>
-                                <button class="btn next">
-                                </button>
+                                <div class="control">
+                                    <button class="btn prev">
+                                        <img src="./assets/img/nav-arrow-prev.svg" alt="이전페이지">
+                                    </button>
+                                    <button class="btn next">
+                                        <img src="./assets/img/nav-arrow-prev.svg" alt="다음페이지">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -316,7 +359,7 @@
                             </button>
                         </div>
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide">
+                            <li class="swiper-slide slide1-motion'">
                                 <div class="box-top">
                                     <h3>레코픽 추천 CASE</h3>
                                 </div>
@@ -326,18 +369,18 @@
                                             <br>높은 성과를 보이고 있습니다.</strong>
                                         <span>* 추천 비적용/ 추천 적용 A/B Test 결과</span>
                                     </div>
-                                    <div class="right-box">
+                                    <!-- <div class="right-box">
                                         <span>기간</span>
                                         <span>8주간, 2회 모바일 메인 페이지에서 테스트 실시</span>
                                         <span>대상 및 참여업체</span>
                                         <span>국내 최대 패션 기업의 온라인몰 / 레코픽, ‘R’사 ’N’사 (3개사 추천 솔루션 업체)</span>
-                                    </div>
+                                    </div> -->
+                                    <div class="right-box active">
+                                        <span class="kind">기간</span>
+                                        <span class="info mb">2주간 그룹별 평균 매출, 평균 구매건수 A/B테스트</span>
+                                        <span class="kind">대상</span>
+                                        <span class="info">국내 대형 명품 온라인몰</span>
                                 </div>
-                                <div class="right-box active">
-                                    <span>기간</span>
-                                    <span>2주간 그룹별 평균 매출, 평균 구매건수 A/B테스트</span>
-                                    <span>대상</span>
-                                    <span>국내 대형 명품 온라인몰</span>
                                 </div>
                                 <div class="group-case">
                                     <!-- <div class="case-box1">
@@ -386,47 +429,81 @@
                                         </div>
                                         <div class="box3-value">
                                             <div class="value-line">
-                                                <span>33,073,490</span>  
-                                                <div class="vs">평균매출<br>(원)</div>
-                                                <span class="blue">38,442,345</span>  
+                                                <span><span class="blind">추천비적용 평균</span><span id="num1">33,073,490</span></span>  
+                                                <div class="vs" aria-hidden="true">평균매출<br>(원)</div>
+                                                <span class="blue"><span class="blind">추천적용 평균</span><span id="num2">38,442,345</span></span>  
                                             </div>
                                             <div class="value-line">
-                                                <span>841%</span>  
-                                                <div class="vs">구매 건수</div>
-                                                <span class="blue">982%</span>  
+                                                <span><span class="blind">추천비적용 구매건수</span>841%</span>  
+                                                <div class="vs" aria-hidden="true">구매 건수</div>
+                                                <span class="blue"><span class="blind">추천적용 구매건수</span>982%</span>  
                                             </div>
                                         </div>
                                         <div class="box3-btn">평균매출 15.6%, 평균 구매건수16.7%증가</div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="swiper-slide">
-                                <div class="left-box">
+                            <li class="swiper-slide slide2-motion">
+                                <div class="box-top">
                                     <h3>레코픽 랜딩 CASE</h3>
-                                    <strong>레코픽의 키워드 랜딩을 사용했을 때,
-                                        비용 대비 매출 효과는 더욱 상승합니다.</strong>
-                                    <span>* 키워드 랜딩 성과 사례</span>
                                 </div>
-                                <div class="right-box">
-                                    <span>테스트</span>
-                                    <span>메인 페이지 랜딩 VS 키워드 랜딩 성과 비교</span>
-                                    <span>대상</span>
-                                    <span>국내 상위 가구 쇼핑몰 A사 / 국내 상위 가구 쇼핑몰 B사</span>
-                                </div>
-                                <div class="weak-group">
-                                    <div class="gragh-top"></div>
-                                    <div class="gragh-bottom">
-                                        <span>네이버키워드<br>광고 적용 사례1</span>
-                                        <span>광고비</span>
-                                        <span>전환 매출</span>
+                                <div class="slide-top">
+                                    <div class="left-box">
+                                        <strong>레코픽의 키워드 랜딩을 사용했을 때,<br>
+                                            비용 대비 매출 효과는 더욱 상승합니다.</strong>
+                                        <span>* 키워드 랜딩 성과 사례</span>
+                                    </div>
+                                    <div class="right-box">
+                                        <span class="kind">테스트</span>
+                                        <span class="info mb">메인 페이지 랜딩 VS 키워드 랜딩 성과 비교</span>
+                                        <span class="kind">대상</span>
+                                        <span class="info">국내 상위 가구 쇼핑몰 A사 / 국내 상위 가구 쇼핑몰 B사</span>
                                     </div>
                                 </div>
-                                <div class="curr-group">
-                                    <div class="gragh-top"></div>
-                                    <div class="gragh-bottom">
-                                        <span>네이버키워드<br>광고 적용 사례2</span>
-                                        <span>광고비</span>
-                                        <span>전환 매출</span>
+                           
+                                 <!-- 그래프 -->
+                                 <div class="case2-area">
+                                    <div class="graph1-box">
+                                        <div class="top">
+                                            <span class="graph-info info1">
+                                                ROAS<br/>
+                                                <strong>2배 증가</strong>
+                                            </span>
+                                            <div class="graph-conts conts1">
+                                                <div><span>메인페이지<br>랜딩</span></div>
+                                                <div><span>키워드랜딩</span></div>
+                                            </div>
+                                            <div class="graph-conts conts2">
+                                                <div><span>메인페이지<br>랜딩</span></div>
+                                                <div><span>키워드랜딩</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <span>네이버키워드<br>광고적용사례1</span>
+                                            <span>광고비</span>
+                                            <span>전환매출</span>
+                                        </div>
+                                    </div>
+                                    <div class="graph2-box">
+                                        <div class="top">
+                                            <span class="graph-info info2">
+                                                ROAS<br/>
+                                                <strong>2.2배 증가</strong>
+                                            </span>
+                                            <div class="graph-conts conts1">
+                                                <div><span>카테고리페이지<br>랜딩</span></div>
+                                                <div><span>키워드랜딩</span></div>
+                                            </div>
+                                            <div class="graph-conts conts2">
+                                                <div><span>카테고리페이지<br>랜딩</span></div>
+                                                <div><span>키워드랜딩</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <span>네이버키워드<br>광고적용사례2</span>
+                                            <span>광고비</span>
+                                            <span>전환매출</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -447,73 +524,98 @@
                         <div class="group-marquee1">
                             <ul class="marquee-list">
                                 <li class="marquee-item">
-                                    <div class="marquee">
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner1.png" alt>
-                                    </div>
+                                    <img src="./assets/img/partner1.png" alt>
+                                    <img src="./assets/img/partner2.png" alt>
+                                    <img src="./assets/img/partner3.png" alt>
+                                    <img src="./assets/img/partner4.png" alt>
+                                    <img src="./assets/img/partner5.png" alt>
+                                    <img src="./assets/img/partner6.png" alt>
+                                    <img src="./assets/img/partner7.png" alt>
+                                    <img src="./assets/img/partner8.png" alt>
+                                </li>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner1.png" alt>
+                                    <img src="./assets/img/partner2.png" alt>
+                                    <img src="./assets/img/partner3.png" alt>
+                                    <img src="./assets/img/partner4.png" alt>
+                                    <img src="./assets/img/partner5.png" alt>
+                                    <img src="./assets/img/partner6.png" alt>
+                                    <img src="./assets/img/partner7.png" alt>
+                                    <img src="./assets/img/partner8.png" alt>
                                 </li>
                             </ul>
                         </div>
                         <div class="group-marquee2">
                             <ul class="marquee-list">
-                                <li class="marquee-item reverse">
-                                    <div class="marquee">
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                    </div>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner9.png" alt>
+                                    <img src="./assets/img/partner10.png" alt>
+                                    <img src="./assets/img/partner11.png" alt>
+                                    <img src="./assets/img/partner12.png" alt>
+                                    <img src="./assets/img/partner13.png" alt>
+                                    <img src="./assets/img/partner14.png" alt>
+                                    <img src="./assets/img/partner15.png" alt>
+                                    <img src="./assets/img/partner16.png" alt>
+                                </li>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner9.png" alt>
+                                    <img src="./assets/img/partner10.png" alt>
+                                    <img src="./assets/img/partner11.png" alt>
+                                    <img src="./assets/img/partner12.png" alt>
+                                    <img src="./assets/img/partner13.png" alt>
+                                    <img src="./assets/img/partner14.png" alt>
+                                    <img src="./assets/img/partner15.png" alt>
+                                    <img src="./assets/img/partner16.png" alt>
                                 </li>
                             </ul>
                         </div>
-                        <div class="group-marquee3">
+                        <div class="group-marquee1">
                             <ul class="marquee-list">
                                 <li class="marquee-item">
-                                    <div class="marquee">
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner18.png" alt>
-                                    </div>
+                                    <img src="./assets/img/partner17.png" alt>
+                                    <img src="./assets/img/partner18.png" alt>
+                                    <img src="./assets/img/partner19.png" alt>
+                                    <img src="./assets/img/partner20.png" alt>
+                                    <img src="./assets/img/partner21.png" alt>
+                                    <img src="./assets/img/partner22.png" alt>
+                                    <img src="./assets/img/partner23.png" alt>
+                                    <img src="./assets/img/partner24.png" alt>
+                                </li>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner17.png" alt>
+                                    <img src="./assets/img/partner18.png" alt>
+                                    <img src="./assets/img/partner19.png" alt>
+                                    <img src="./assets/img/partner20.png" alt>
+                                    <img src="./assets/img/partner21.png" alt>
+                                    <img src="./assets/img/partner22.png" alt>
+                                    <img src="./assets/img/partner23.png" alt>
+                                    <img src="./assets/img/partner24.png" alt>
                                 </li>
                             </ul>
                         </div>
-                        <div class="group-marquee4">
+                        <div class="group-marquee2">
                             <ul class="marquee-list">
-                                <li class="marquee-item reverse">
-                                    <div class="marquee">
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                        <img src="https://recopick.com/img/main/partners/partner24.png" alt>
-                                    </div>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner25.png" alt>
+                                    <img src="./assets/img/partner26.png" alt>
+                                    <img src="./assets/img/partner27.png" alt>
+                                    <img src="./assets/img/partner28.png" alt>
+                                    <img src="./assets/img/partner29.png" alt>
+                                    <img src="./assets/img/partner30.png" alt>
+                                    <img src="./assets/img/partner31.png" alt>
+                                    <img src="./assets/img/partner32.png" alt>
+                                    <img src="./assets/img/partner33.png" alt>
+                                </li>
+                                <li class="marquee-item">
+                                    <img src="./assets/img/partner25.png" alt>
+                                    <img src="./assets/img/partner26.png" alt>
+                                    <img src="./assets/img/partner27.png" alt>
+                                    <img src="./assets/img/partner28.png" alt>
+                                    <img src="./assets/img/partner29.png" alt>
+                                    <img src="./assets/img/partner30.png" alt>
+                                    <img src="./assets/img/partner31.png" alt>
+                                    <img src="./assets/img/partner32.png" alt>
+                                    <img src="./assets/img/partner33.png" alt>
                                 </li>
                             </ul>
                         </div>

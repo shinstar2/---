@@ -4,7 +4,9 @@
 *{margin:0;padding:0;font:inherit;color:inherit;}
 *, :after, :before {box-sizing:border-box;flex-shrink:0;}
 
-html, body {height:100%; line-height: 1;}
+html, body {height:100%; line-height: 1;
+    min-width: 1228px;
+    ;}
 
 
 img, picture, video, canvas, svg {display: block;max-width:100%;}
@@ -24,3 +26,13 @@ input,select{
     appearance: none;
     outline: 0;
 }
+
+
+body{
+    font-family: 'Pretend','Sora',sans-serif;
+    color: #333;
+}
+body.hidden{
+    overflow: hidden;
+}
+
