@@ -1628,7 +1628,6 @@
     animation: opacity0 0.6s 4.9s ease forwards;
 }
 .sc-slide2 .graph2-box .graph-conts div span{
-    /* opacity: 1;  */
     /* 언제 오퍼시티0 풀지?? */
     transition-delay: 2s ;
     color: #fff;
